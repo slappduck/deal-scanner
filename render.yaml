@@ -1,0 +1,14 @@
+# Render Blueprint for deal_scanner.
+# In Render: New -> Blueprint -> point at the GitHub repo containing this file,
+# and it will pick up these settings automatically. (Or configure a Web Service
+# manually with the same build/start commands -- see README.md.)
+services:
+  - type: web
+    name: deal-scanner
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

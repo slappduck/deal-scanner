@@ -1,0 +1,58 @@
+{
+  "location": {
+    "city": "Aurora, MO",
+    "postal_code": "65605",
+    "search_radius_miles": 65,
+    "craigslist_regions": [
+      "springfield.craigslist.org",
+      "joplin.craigslist.org"
+    ]
+  },
+  "search": {
+    "max_listings": 60,
+    "keywords_exclude": [
+      "dirt", "mulch", "soil", "topsoil", "yard waste", "yard debris", "branches",
+      "tree limbs", "leaves", "grass clippings", "moving boxes", "cardboard boxes",
+      "packing boxes", "scrap wood", "construction debris", "concrete", "rubble",
+      "manure", "compost", "fill dirt", "broken beyond repair", "scrap metal only",
+      "sand", "gravel", "hay", "straw"
+    ],
+    "keywords_furniture": [
+      "couch", "sofa", "loveseat", "recliner", "table", "chair", "dresser", "desk",
+      "bed frame", "mattress", "cabinet", "bookshelf", "nightstand", "futon",
+      "ottoman", "entertainment center", "dining set", "wardrobe"
+    ],
+    "keywords_electronics": [
+      "tv", "television", "computer", "laptop", "monitor", "printer", "stereo",
+      "speaker", "receiver", "game console", "xbox", "playstation", "tablet", "router"
+    ],
+    "keywords_tools": [
+      "drill", "saw", "toolbox", "tool box", "ladder", "mower", "lawnmower",
+      "generator", "air compressor", "wrench set", "power tool", "weed eater",
+      "trimmer", "pressure washer"
+    ],
+    "keywords_appliances": [
+      "fridge", "refrigerator", "washer", "dryer", "stove", "oven", "microwave",
+      "dishwasher", "air conditioner", "window ac", "freezer", "water heater"
+    ]
+  },
+  "valuation": {
+    "min_resale_value": 50,
+    "ebay_max_comps": 8,
+    "request_delay_seconds": 2,
+    "fallback_values": {
+      "furniture": 40,
+      "electronics": 35,
+      "tools": 30,
+      "appliances": 45,
+      "uncategorized": 0
+    }
+  },
+  "facebook_marketplace": {
+    "enabled": false
+  },
+  "output": {
+    "report_dir": "reports",
+    "report_filename": "deal_report.html"
+  }
+}
